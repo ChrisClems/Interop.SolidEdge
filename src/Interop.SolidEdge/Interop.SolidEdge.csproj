@@ -1,8 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <LangVersion>12</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -109,7 +110,7 @@
     <Version>220.0.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Derek Gooding</Authors>
-    <Company />
+    <Company>Chris Clemons</Company>
     <Description>A single Interop Assembly containing all relevant Solid Edge API definitions.</Description>
     <PackageReleaseNotes>Updated to Solid Edge 2022 MP9.</PackageReleaseNotes>
     <PackageId>Interop.SolidEdge</PackageId>

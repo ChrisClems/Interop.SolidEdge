@@ -45,21 +45,21 @@
   </Target>
 
   <Target Name="ExecuteILRepack" Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <PropertyGroup Condition="'$(TargetFramework)'=='NET20'">
-      <ILRepackTargetPlatform>v2</ILRepackTargetPlatform>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(TargetFramework)'=='NET40'">
+    <PropertyGroup Condition="'$(TargetFramework)'=='NET472'">
       <ILRepackTargetPlatform>v4</ILRepackTargetPlatform>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(TargetFramework)'=='NET45'">
+    <PropertyGroup Condition="'$(TargetFramework)'=='NET481'">
       <ILRepackTargetPlatform>v4</ILRepackTargetPlatform>
     </PropertyGroup>
 
-	  <PropertyGroup Condition="'$(TargetFramework)'=='net6.0'">
-		  <ILRepackTargetPlatform>v4</ILRepackTargetPlatform>
-	  </PropertyGroup>
+    <PropertyGroup Condition="'$(TargetFramework)'=='net6.0-windows'">
+      <ILRepackTargetPlatform>v4</ILRepackTargetPlatform>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-windows'">
+      <ILRepackTargetPlatform>v4</ILRepackTargetPlatform>
+    </PropertyGroup>
     
     <Error Condition="'$(ILRepackTargetPlatform)'==''" Text="TargetFramework '$(TargetFramework)' is not supported in this custom build task." />
     
