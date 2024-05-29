@@ -101,24 +101,24 @@
     <PackageReference Include="ILRepack" Version="2.0.13" />
     <!-- marks all packages as 'local only' so they don't end up in the nuspec -->
     <PackageReference Update="@(PackageReference)" PrivateAssets="All" />
-    <PackageReference Update="ILRepack" Version="2.0.16" />
+    <PackageReference Update="ILRepack" Version="2.0.33" />
   </ItemGroup>
 
   <PropertyGroup>
-    <AssemblyVersion>220.0.0.0</AssemblyVersion>
-    <FileVersion>220.0.0.0</FileVersion>
-    <Version>220.0.0</Version>
+    <AssemblyVersion>2024.5.1</AssemblyVersion>
+    <FileVersion>2024.5.1</FileVersion>
+    <Version>2024.5.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Derek Gooding</Authors>
+    <Authors>Chris Clemons</Authors>
     <Company>Chris Clemons</Company>
     <Description>A single Interop Assembly containing all relevant Solid Edge API definitions.</Description>
-    <PackageReleaseNotes>Updated to Solid Edge 2022 MP9.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to Solid Edge 2022 and .NET 8.</PackageReleaseNotes>
     <PackageId>Interop.SolidEdge</PackageId>
     <PackageIconUrl>https://raw.githubusercontent.com/SolidEdgeCommunity/Interop.SolidEdge/master/media/icon.png</PackageIconUrl>
-    <PackageProjectUrl>https://github.com/SolidEdgeCommunity/Interop.SolidEdge</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/SolidEdgeCommunity/Interop.SolidEdge/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ChrisClems/Interop.SolidEdge</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ChrisClems/Interop.SolidEdge/blob/master/LICENSE.md</PackageLicenseUrl>
     <PackageTags>interop solidedge</PackageTags>
-    <RepositoryUrl>https://github.com/SolidEdgeCommunity/Interop.SolidEdge.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ChrisClems/Interop.SolidEdge.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
