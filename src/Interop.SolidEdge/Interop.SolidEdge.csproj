@@ -114,13 +114,18 @@
     <Description>A single Interop Assembly containing all relevant Solid Edge API definitions.</Description>
     <PackageReleaseNotes>Updated to Solid Edge 2022 and .NET 8.</PackageReleaseNotes>
     <PackageId>Interop.SolidEdge</PackageId>
+    <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl>https://raw.githubusercontent.com/SolidEdgeCommunity/Interop.SolidEdge/master/media/icon.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/ChrisClems/Interop.SolidEdge</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/ChrisClems/Interop.SolidEdge/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>interop solidedge</PackageTags>
     <RepositoryUrl>https://github.com/ChrisClems/Interop.SolidEdge.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <None Include="Assets\icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
   <!-- MSBUILD magic ;-) -->
   <Import Project="Interop.SolidEdge.targets" />
